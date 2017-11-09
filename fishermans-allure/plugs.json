@@ -1,0 +1,28 @@
+[
+    {
+        "title": "The Sirin",
+        "size": "36 inch x 24 inch x 36 inch",
+        "weight": "2 ounce, rounding down ;)", 
+        "cost": 500, 
+        "tag": "Hey, boys!",
+        "description": "Jointed hard plastic plug with silicone add-ons, googley-eyes, and a teeny weeny yellow polka dot bikini; specially designed to capture the attentions and bodies of lonely fish.",
+        "image": "plugs1.png"
+    },
+    {   "title": "The Wagner",
+        "size": "4 inch x 2 inch",
+        "weight": "8 ounce", 
+        "cost": 800, 
+        "tag": "Shield shall be splintered! A sword day! A red day! Ere the sun rises! Ride now! Ride now! Ride!",
+        "description": "Far superior to conventional rattlers, a complex internal mechanism produces a faithful rendition of the orchestral music from act 3 of Richard Wagner's Die Walküre.",
+        "image": "plus2.png"
+    },
+    {
+        "title": "The Donald",
+        "size": "2 inch x 1 inch",
+        "weight": "1 ounce", 
+        "cost": 10000, 
+        "tag": "It's going to be great; it's going to be beautiful.",
+        "description": "Inspired by the 45th President of the United States, this classy gilded crankbait only catches non-native species of fish.",
+        "image": "plugs3.png"
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "title": "GyroJET MACH 5",
+        "size": "2 inch x 1 inch",
+        "weight": "6 ounce", 
+        "cost": 1000, 
+        "tag": "Makes all the little fishies' heads spin.",
+        "description": "Equipped with a motor that spins at 5000 RPM, this spinner creates a shockwave that instantly makes fish go belly-up, so you can easily scoop them up with a net.",
+        "image": "spinner1.png"
+    },
+    {        
+        "title": "Hurricane Pesca",
+        "size": "2 inch x 1 inch",
+        "weight": "3 ounce", 
+        "cost": 1500, 
+        "tag": "Bascially a tidal wave...of DESTRUCTION.",
+        "description": "For gentleman who want to kill as many fish as the last 100 years of tropical storms combined, this storm-in-a-bottle spinner is powerful enough to stir cement.",
+        "image": "spinner2.png"
+    },
+    {   "title": "The Galaxy",
+        "size": "10 inch x 15 inch",
+        "weight": "5 ounce", 
+        "cost": 10000, 
+        "tag": "An entire universe of possibilities.",
+        "description": "Made of pure meteoric iron from the cosmos, this spinner is still rotating from its orbit around the sun and is sure to catch all terrestrial and extra-terrestrial species of fish.",
+        "image": "spinner3.png"
+    }
+]

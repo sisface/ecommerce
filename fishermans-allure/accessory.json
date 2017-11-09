@@ -1,0 +1,28 @@
+[
+    {
+        "title": "24K Golden J-Hook",
+        "size": "1 inch x .5 inch",
+        "weight": ".25 ounce", 
+        "cost": 1000, 
+        "tag": "Don't settle for common steel.",
+        "description": "Crafted in pure 24-Karat gold, this single J-hook makes a fine addition to any Macroexpand lure!",
+        "image": "accessory1.png"
+    },
+    {   "title": "24K Golden Double J-Hook",
+        "size": "1 inch x 1 inch",
+        "weight": ".5 ounce", 
+        "cost": 1500, 
+        "tag": "Double the hook power.",
+        "description": "Crafted in pure 24-Karat gold, this double J-hook features a single eye with two golden shanks and will make all your poor friends say, WOW!",
+        "image": "accessory2.png"
+    },
+    {
+        "title": "24K Golden Treble J-Hook",
+        "size": "1 inch x .5 inch",
+        "weight": ".75 ounce", 
+        "cost": 2000, 
+        "tag": "For when two points just isn't enough.",
+        "description": "Crafted in pure 24-Karat gold, this versatile treble J-hook features a single eye with three golden shanks, for catching only the most high-class fish!",
+        "image": "accessory3.png"
+    }
+]

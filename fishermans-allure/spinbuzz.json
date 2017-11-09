@@ -1,0 +1,28 @@
+[
+    {
+        "title": "BIT3MAST3R-XTREME 100000",
+        "size": "5 inch x 4 inch",
+        "weight": "4 ounce", 
+        "cost": 700, 
+        "tag": "You know it's X-TREME because there's no 'e' in 'extreme'.",
+        "description": "This buzzbait features a propeller blade and longarm made of super high-strength titanium.  In fact, the skirt is made with titanium, as well.",
+        "image": "spinbuzz1.png"
+    },
+    {
+        "title": "The Ninja",
+        "size": "3 inch x 3 inch",
+        "weight": "20 ounce", 
+        "cost": 700, 
+        "tag": "While you spent your youth making money and dating women, I studied the blade",
+        "description": "A sleek Damascus steel buzzbait with ninja star blades and a miniature katana instead of a hook.",
+        "image": "spinbuzz2.png"
+    },    
+    {   "title": "The Kitchen Sink",
+        "size": "10 inch x 10 inch",
+        "weight": "25 ounce", 
+        "cost": 700, 
+        "tag": "Everything and the....",
+        "description": "With three longarms, three weights with skirts, and a plurality of hooks, this spinnerbait is extra in every way.",
+        "image": "spinbuzz3.png"
+    }
+]

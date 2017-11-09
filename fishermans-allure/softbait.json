@@ -1,0 +1,28 @@
+[
+    {
+        "title": "The Royal Jelly",
+        "size": "6 inch x .5 inch",
+        "weight": "3 ounce", 
+        "cost": 200, 
+        "tag": "Goes well on toast.",
+        "description": "A delicate synthetic softbait embossed with your personal coat of arms, so the fish will have the honor of knowing who's catching them.",
+        "image": "softbait1.png"
+    },
+    {   "title": "The Nyarlathotep",
+        "size": "8 inch x 8 inch",
+        "weight": "8 ounce", 
+        "cost": 666, 
+        "tag": "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.",
+        "description": "Enchanted by select verses from the Necronomicon, this multi-tentacled softbait with glowing LED eyes allows you to call upon the unspeakable horrors unleashed by the Outer Gods to enhance your fishing prowess, but at a hefty spiritual price.  Battery not included.",
+        "image": "softbait2.png"
+    },
+    {
+        "title": "The Schrödinger",
+        "size": "-5 inch x -1 inch",
+        "weight": "-3 ounce", 
+        "cost": 500, 
+        "tag": "Warning: fish caught using this bait may suffer waveform collapse.",
+        "description": "This high-tech plastic softbait uses the principle of quantum superposition and random subatomic events to nudge the state of a fish from 'uncaught' to 'caught'.",
+        "image": "softbait3.png"
+    }
+]

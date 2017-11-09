@@ -1,0 +1,28 @@
+[
+    {
+        "title": "The Hook",
+        "size": "2 inch x 2 inch",
+        "weight": "1 ounce", 
+        "cost": 200, 
+        "tag": "Now with EXTRA hook!",
+        "description": "This product has a lot of hooks, and nothing else.",
+        "image": "specialty1.png"
+    },
+    {
+        "title": "Squeakface",
+        "size": "2 inch x 2 inch",
+        "weight": "2 ounce", 
+        "cost": 200, 
+        "tag": "For catching catfish, obviously",
+        "description": "A real stuffed mouse with a bunch of hooks sticking out of it.",
+        "image": "specialty2.png"
+    },
+    {   "title": "The Shotgun",
+        "size": "3 inch x .5 inch",
+        "weight": "5 ounce", 
+        "cost": 11500, 
+        "tag": "Like shooting fish in a barrel, literally!",
+        "description": "A minaturized version of a Holland & Holland engraved Royal Model 20 gauge double-barreled side by side shotgun.",
+        "image": "specialty3.png"
+    }
+]

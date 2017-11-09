@@ -1,0 +1,28 @@
+[
+    {
+        "title": "The Ermine",
+        "size": "2 inch x 1 inch",
+        "weight": "3 ounce", 
+        "cost": 200, 
+        "tag": "For the budget-minded.",
+        "description": "The onyx weighted head of this model is trimmed with the prized winter coat of organic, free-range stoats.",
+        "image": "jig1.png"
+    },
+    {        
+        "title": "The Dinner Jacket",
+        "size": "2 inch x 1 inch",
+        "weight": "3 ounce", 
+        "cost": 500, 
+        "tag": "The jig is up.",
+        "description": "With a .925 silver weighted head and dressed in a luxurious tuxedo, all fish scramble punch this jig's dance card for the last song of the night!",
+        "image": "jig2.png"
+    },
+    {   "title": "The Peacock",
+        "size": "1 inch x 5 inch",
+        "weight": "3 ounce", 
+        "cost": 800, 
+        "tag": "Imbued with the widom of Chandragupta Maurya.",
+        "description": "A peridot head is decorated with genuine feathers of Indian peafowls so that the dazzling eye spots hypnotize the fish, causing them to fly right into your boat!",
+        "image": "jig3.png"
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "title": "The Actual Fly",
+        "size": ".25 inch x .25 inch",
+        "weight": ".25 ounce", 
+        "cost": 100, 
+        "tag": "No animals were harmed in the making of this bait.",
+        "description": "A geninue Musca domestica of the suborder Cyclorrhapha, wearing a tiny collar and bell.  I don't know why the fish swallowed the fly--perhaps it'll die!",
+        "image": "flies1.png"
+    },
+    {
+        "title": "The Diamond",
+        "size": ".25 inch x .25 inch",
+        "weight": ".5 ounce", 
+        "cost": 5000, 
+        "tag": "Bling bling.",
+        "description": "Made of pure carbon forged in the molten bowels of the earth, this 10 Karat princess-cut diamond isn't very aerodynamic, but your wife can wear it as an earring.",
+        "image": "flies2.png"
+    },    
+    {   "title": "The Airplane",
+        "size": " 65 feet x 93 feet, 10 inch",
+        "weight": "43,499 lb (land), 37,700 lb (water)", 
+        "cost": 5000000, 
+        "tag": "The only fly fishing lure you fish on, rather than with.",
+        "description": "A luxury amphibious, fixed-wing private seaplane with retractable wheels, reinforced keels, kitchen facilities, a smoking room, and a wet bar.  Crew capacity: 2.",
+        "image": "flies3.png"
+    }
+]

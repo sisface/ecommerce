@@ -1,0 +1,28 @@
+[
+    {
+        "title": "The Spork",
+        "size": "2 inch x 1 inch",
+        "weight": "3 ounce", 
+        "cost": 300, 
+        "tag": "The ultimate multi-tool.",
+        "description": "Product features a rugged stainless steel body and tines for a versatile and dainty fishing experience.",
+        "image": "spoon1.png"
+    },
+    {   "title": "The Splayd",
+        "size": "4 inch x 1 inch",
+        "weight": "5 ounce", 
+        "cost": 350, 
+        "tag": "If a little is good, then more is better.",
+        "description": "This classy stainless steel cutlery has a spoon to attract the fish, a knife to filet it, and a fork in case you've an urgent craving for sushi.",
+        "image": "spoon2.png"
+    },
+    {
+        "title": "The Green Fairy",
+        "size": "2 inch x 1 inch",
+        "weight": "3 ounce", 
+        "cost": 700, 
+        "tag": "Its robe is the color of despair.",
+        "description": "This sterling silver spoon may tarnish after one use, but you're rich enough to buy a new one every time. (Fishing spoon doubles as an absinthe spoon.)",
+        "image": "spoon3.png"
+    }
+]
