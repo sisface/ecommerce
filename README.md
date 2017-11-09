@@ -1,6 +1,6 @@
 # ecommerce
 
-FIXME
+This project is a test web store.
 
 ## Prerequisites
 
@@ -16,4 +16,4 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2017 FIXME
+Copyright © 2017 macroexpand, Inc.
