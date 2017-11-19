@@ -1,3 +1,93 @@
 body {
-    background: grey;
+background: #F4F4F4
+}
+
+/* -- Header -- */
+.center-fit {
+    padding: 0;
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%
+}
+
+/* -- Footer -- */
+.footer {
+    padding: 5px;
+    height: 7%;
+    width: 99%;
+    border: 1px solid #F0F0F0;
+    margin: 0px auto;
+    background-color: grey;
+    color: white
+}
+span.tab {
+    padding-left: 5em;
+    font-size: x-small
+}
+/* -- Navigation Menu -- */
+.navbar {
+    padding: 0 12px;
+    height: 43px;
+    width: 99%;
+    border: 1px solid #F0F0F0;
+    margin: 0px auto;
+    background: black
+}
+#navbar ul { 
+    position: relative; 
+    height: 100%; 
+}
+#navbar li { 
+    position: relative; 
+    float: left; 
+}
+#navbar li a { 
+    display: block; 
+    width: 101px; 
+    height: 27px; 
+    padding-top: 16px; 
+    float: left; 
+    font-size: .9em; 
+    color: #fff; 
+    text-decoration: none; 
+    text-align: center; 
+}
+#navbar li.active a,
+#navbar li a:hover { 
+    background-color: grey; 
+    background-position: 0 -43px; 
+}
+
+/* -- Search Bar -- */
+#main { 
+    position: relative; 
+    padding-left: 25px; 
+    margin-bottom: 12px; 
+}
+#search {
+    float: right;  
+    right: 12px; 
+    top: 10px; 
+    width: 30%; 
+    text-align: right 
+}
+#search .button { 
+    width: 166px; 
+    height: 17px; 
+    border: none; 
+    padding: 3px 12px
+}
+#search .submit { 
+    width: 22px; 
+    height: 23px; 
+    border: none; 
+    padding: 0; 
+    margin-left: 5px 
+} 
+/* -- Advertisements -- */
+.random-ad { 
+    float: right; 
+    height: 600px; 
+    width: 240px; 
 }
