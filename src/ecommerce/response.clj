@@ -50,3 +50,131 @@
       (result-nil? result))
     (catch IllegalArgumentException e
       (json-404 (.toString e)))))
+
+(defn get-flies-list []
+  (try
+    (let [result (db/get-maps "flies")]
+      (result-nil? result))
+    (catch Exception e
+      (json-404 (.toString e)))))
+
+(defn get-flies-entry [id]
+  (try
+    (let [result (db/get-by-id
+                  "flies"
+                  (convert-to-object-id id))]
+      (result-nil? result))
+    (catch IllegalArgumentException e
+      (json-404 (.toString e)))))
+
+(defn get-jig-list []
+  (try
+    (let [result (db/get-maps "jig")]
+      (result-nil? result))
+    (catch Exception e
+      (json-404 (.toString e)))))
+
+(defn get-jig-entry [id]
+  (try
+    (let [result (db/get-by-id
+                  "jig"
+                  (convert-to-object-id id))]
+      (result-nil? result))
+    (catch IllegalArgumentException e
+      (json-404 (.toString e)))))
+
+(defn get-plugs-list []
+  (try
+    (let [result (db/get-maps "plugs")]
+      (result-nil? result))
+    (catch Exception e
+      (json-404 (.toString e)))))
+
+(defn get-plugs-entry [id]
+  (try
+    (let [result (db/get-by-id
+                  "plugs"
+                  (convert-to-object-id id))]
+      (result-nil? result))
+    (catch IllegalArgumentException e
+      (json-404 (.toString e)))))
+
+(defn get-softbait-list []
+  (try
+    (let [result (db/get-maps "softbait")]
+      (result-nil? result))
+    (catch Exception e
+      (json-404 (.toString e)))))
+
+(defn get-softbait-entry [id]
+  (try
+    (let [result (db/get-by-id
+                  "softbait"
+                  (convert-to-object-id id))]
+      (result-nil? result))
+    (catch IllegalArgumentException e
+      (json-404 (.toString e)))))
+
+(defn get-specialty-list []
+  (try
+    (let [result (db/get-maps "specialty")]
+      (result-nil? result))
+    (catch Exception e
+      (json-404 (.toString e)))))
+
+(defn get-specialty-entry [id]
+  (try
+    (let [result (db/get-by-id
+                  "specialty"
+                  (convert-to-object-id id))]
+      (result-nil? result))
+    (catch IllegalArgumentException e
+      (json-404 (.toString e)))))
+
+(defn get-spinbuzz-list []
+  (try
+    (let [result (db/get-maps "spinbuzz")]
+      (result-nil? result))
+    (catch Exception e
+      (json-404 (.toString e)))))
+
+(defn get-spinbuzz-entry [id]
+  (try
+    (let [result (db/get-by-id
+                  "spinbuzz"
+                  (convert-to-object-id id))]
+      (result-nil? result))
+    (catch IllegalArgumentException e
+      (json-404 (.toString e)))))
+
+(defn get-spinner-list []
+  (try
+    (let [result (db/get-maps "spinner")]
+      (result-nil? result))
+    (catch Exception e
+      (json-404 (.toString e)))))
+
+(defn get-spinner-entry [id]
+  (try
+    (let [result (db/get-by-id
+                  "spinner"
+                  (convert-to-object-id id))]
+      (result-nil? result))
+    (catch IllegalArgumentException e
+      (json-404 (.toString e)))))
+
+(defn get-spoon-list []
+  (try
+    (let [result (db/get-maps "spoon")]
+      (result-nil? result))
+    (catch Exception e
+      (json-404 (.toString e)))))
+
+(defn get-spoon-entry [id]
+  (try
+    (let [result (db/get-by-id
+                  "spoon"
+                  (convert-to-object-id id))]
+      (result-nil? result))
+    (catch IllegalArgumentException e
+      (json-404 (.toString e)))))
