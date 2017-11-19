@@ -15,6 +15,5 @@
   ([join?] (jetty/run-jetty handler/app
                             {:join?        join?
                              :port         3000
-                             :ssl?         false
-                             }))
+                             :ssl?         false}))
   ([] (boot false)))
