@@ -1,11 +1,27 @@
 (ns ecommerce.handler
-  (:require [compojure.core :refer :all]
+  (:import [org.bson.types ObjectId])
+  (:require [ecommerce.config :as config]
+            [ecommerce.db :as db]
+            [ecommerce.response :as response]
+            [ecommerce.utility :as util]
+            [compojure.core :as cc]
+            [compojure.handler :as handler]
             [compojure.route :as route]
-            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
+            [cheshire.core :as cheshire]
+            [cheshire.generate :as generate :refer [add-encoder encode-str]]
+            [ring.middleware.defaults :as rmd]
+            [ring.util.response :as resp]))
 
-(defroutes app-routes
-  (GET "/" [] "Hello World")
+(defn init []
+  (db/db-setup config/host config/port config/db config/staging-db
+               config/temp-db config/archive-db config/user config/pwd))
+
+(cc/defroutes app-routes
+  (cc/GET "/" [] (resp/redirect "/index.html"))
+  (cc/GET "/accessory" [] (response/get-accessory-list))
+  (cc/GET "/accessory/:id" [id] (response/get-accessory-entry id))
+  (route/resources "/")
   (route/not-found "Not Found"))
 
 (def app
-  (wrap-defaults app-routes site-defaults))
+    (rmd/wrap-defaults app-routes (assoc-in rmd/site-defaults [:security :anti-forgery] false)))

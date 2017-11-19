@@ -14,7 +14,7 @@
   :jvm-opts ["-Xmx12288m" "-XX:+UseConcMarkSweepGC" "-XX:-OmitStackTraceInFastThrow"]
   :main a2t-clj.handler
   :repl-options {:init-ns user
-                 :init (ecomerce.handler/init)}
+                 :init (ecommerce.handler/init)}
   :global-vars {*print-length* 100}
   :profiles {:dev {:resource-paths ["dev"]
                    :dependencies [[javax.servlet/servlet-api "2.5"]
