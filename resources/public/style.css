@@ -34,60 +34,60 @@ span.tab {
     margin: 0px auto;
     background: black
 }
-#navbar ul { 
-    position: relative; 
-    height: 100%; 
+#navbar ul {
+    position: relative;
+    height: 100%;
 }
-#navbar li { 
-    position: relative; 
-    float: left; 
+#navbar li {
+    position: relative;
+    float: left;
 }
-#navbar li a { 
-    display: block; 
-    width: 101px; 
-    height: 27px; 
-    padding-top: 16px; 
-    float: left; 
-    font-size: .9em; 
-    color: #fff; 
-    text-decoration: none; 
-    text-align: center; 
+#navbar li a {
+    display: block;
+    width: 101px;
+    height: 27px;
+    padding-top: 16px;
+    float: left;
+    font-size: .9em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
 }
 #navbar li.active a,
-#navbar li a:hover { 
-    background-color: grey; 
-    background-position: 0 -43px; 
+#navbar li a:hover {
+    background-color: grey;
+    background-position: 0 -43px;
 }
 
 /* -- Search Bar -- */
-#main { 
-    position: relative; 
-    padding-left: 25px; 
-    margin-bottom: 12px; 
+#main {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
 }
 #search {
-    float: right;  
-    right: 12px; 
-    top: 10px; 
-    width: 30%; 
-    text-align: right 
+    float: right;
+    right: 12px;
+    top: 10px;
+    width: 30%;
+    text-align: right
 }
-#search .button { 
-    width: 166px; 
-    height: 17px; 
-    border: none; 
+#search .button {
+    width: 166px;
+    height: 17px;
+    border: none;
     padding: 3px 12px
 }
-#search .submit { 
-    width: 22px; 
-    height: 23px; 
-    border: none; 
-    padding: 0; 
-    margin-left: 5px 
-} 
+#search .submit {
+    width: 22px;
+    height: 23px;
+    border: none;
+    padding: 0;
+    margin-left: 5px
+}
 /* -- Advertisements -- */
-.random-ad { 
-    float: right; 
-    height: 600px; 
-    width: 240px; 
+#random_ad {
+    float: right;
+    height: 600px;
+    width: 240px;
 }
