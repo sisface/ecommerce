@@ -21,7 +21,7 @@
   (cc/GET "/accessory" [] (response/get-accessory-list))
   (cc/GET "/accessory/:id" [id] (response/get-accessory-entry id))
   (cc/GET "/flies" [] (response/get-flies-list))
-  (cc/GET "/flies/:id" [id] (response/get-flies2-entry id))
+  (cc/GET "/flies/:id" [id] (response/get-flies-entry id))
   (cc/GET "/jig" [] (response/get-jig-list))
   (cc/GET "/jig/:id" [id] (response/get-jig-entry id))
   (cc/GET "/plugs" [] (response/get-plugs-list))
