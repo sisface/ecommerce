@@ -18,7 +18,7 @@ function renderItem(item) {
         html += "<b>Size: </b>" + e.size + "<br /><br />";
         html += "<b>Weight: </b>" + e.weight + "<br /><br />";
         html += "<b>Cost:</b> $" + e.cost + "<br /><br />";
-        html += "<button>Add to Cart</button>";
+        html += "<button>Add to Cart</button><br />";
         html += "</div>";
     });
     return html;
