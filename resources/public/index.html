@@ -6,44 +6,48 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
   <body>
-    <div class="header">
-      <img class="center-fit" src="./img/index-banner.png" alt="banner">
-    </div>
-    <div class="navbar" id="navbar">
-      <ul>
-        <li><a href="">Main Page<span></span></a></li>
-        <li><a href="">link<span></span></a></li>
-        <li><a href="">link<span></span></a></li>
+    <div class="page-wrap">
+      <div class="header">
+        <img class="center-fit" src="./img/index-banner.png" alt="banner">
+      </div>
+      <div id="main">
+          <div class="navbar" id="navbar">
+              <ul id = "navbar ul">
+                <li><a href="">Home<span></span></a></li>
+                <li><a href="">About<span></span></a></li>
+              <li>
+        <select id="category">
+          <option value="flies">Flies</option>
+          <option value="jig">Jigs</option>
+          <option value="plugs">Plugs</option>
+          <option value="softbait">Softbait</option>
+          <option value="spinbuzz">Spinnerbaits/Buzzbaits</option>
+          <option value="spinner">Spinners</option>
+          <option value="spoon">Spoons</option>
+          <option value="specialty">Specialties</option>
+          <option value="accessory">Accessories</option>
+        </select>
+        <button id="search_button" type="button">Search</button>
       </ul>
+      </div>
+      <div id="content">
+        asdf
+      </div>
+      <div id="random_ad">
+      </div>
+   </div>
+    <div class="site-footer">
+      <div align="center">
+        <p>
+          <span class="tab"><a href="./privacy.html">privacy policy</a></span>
+          <span class="tab">site map</span>
+          <span class="tab">contact</span>
+        </p>
+        <br />
+        <p>
+          <span class="tab"><b>&#169;2017 macroexpand, Inc.</b></span>
+        </p>
     </div>
-    <div id="main">
-      <select id="category">
-        <option value="accessory">Accessories</option>
-        <option value="flies">Flies</option>
-        <option value="jig">Jigs</option>
-        <option value="plugs">Plugs</option>
-        <option value="softbait">Softbait</option>
-        <option value="specialty">Specialties</option>
-        <option value="spinbuzz">Buzz Baits</option>
-        <option value="spinner">Spinners</option>
-        <option value="spoon">Spoons</option>
-      </select>
-      <button id="search_button" type="button">Search</button>
-    </div>
-    <div id="content">
-    </div>
-    <div id="random_ad">
-
-    </div>
-    <div class="footer">
-      <p>
-        <span class="tab"><a href="./privacy.html">privacy policy</a></span>
-        <span class="tab">site map</span>
-        <span class="tab">contact</span>
-      </p>
-      <p>
-        <span class="tab"><b>&#169;2017 macroexpand, Inc.</b></span>
-      </p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script.js"></script>
