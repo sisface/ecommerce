@@ -11,8 +11,8 @@ function renderItem(item) {
     var html = "";
     item.forEach(function (e) {
         html += '<div class="item">';
-        html += "Product Name: " + e.title + "<br />";
-        html += '<img src="img/' + e.image + '" width="200" height="200" /><br />';
+        html += "Product Name: " + e.title + "<br /><br />";
+        html += '<img src="img/' + e.image + '" width="200" height="200" /><br /><br />';
         html += "Tag: " + e.tag + "<br /><br />";
         html += "Description: " + e.description + "<br />";
         html += "Size: " + e.size + "<br />";
