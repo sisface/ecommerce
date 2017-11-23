@@ -26,10 +26,12 @@ body {
 }
 
 /* -- Footer -- */
-.site-footer, .page-wrap:after {
+footer, .page-wrap:after {
     height: 142px; 
 }
-.site-footer {
+footer {
+    clear: both;
+    text-align: center;
     padding: 0;
     height: 7%;
     width: 100%;
@@ -109,14 +111,20 @@ span.tab {
     padding: 0;
     margin-left: 5px
 }
+
+#content {
+    float: left;
+}
+
 /* -- Advertisements -- */
 
 #random_ad {
     padding: 0px;
     display: block;
-    margin: auto;
+    margin: 0.5em 3em 0.5em 0.5em;
     max-height: 100%;
-    max-width: 100%
+    max-width: 100%;
+    float: right;
 }
 @media screen and (max-width: 600px) {    
     #random_ad {display:none;}
