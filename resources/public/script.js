@@ -13,7 +13,7 @@ function renderItem(item) {
         html += '<div class="item">';
         html += "<b>Product Name:</b> " + e.title + "<br /><br />";
         html += '<img src="img/' + e.image + '" width="200" height="200" /><br /><br />';
-        html += e.tag + "<br /><br />";
+        html += "<i>" + e.tag + "</i><br /><br />";
         html += "<b>Description:</b> " + e.description + "<br /><br />";
         html += "<b>Size: </b>" + e.size + "<br /><br />";
         html += "<b>Weight: </b>" + e.weight + "<br /><br />";
