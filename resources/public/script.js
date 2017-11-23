@@ -20,8 +20,8 @@ function renderItem(item, category) {
         html += "<b>Size: </b>" + e.size + "<br /><br />";
         html += "<b>Weight: </b>" + e.weight + "<br /><br />";
         html += "<b>Cost:</b> $" + e.cost + "<br /><br />";
-        html += '<button class="add_cart" id="' + e.id + '|' + category +
-            + '">Add to Cart</button><br />';
+        html += '<button class="add_cart" id="' + e._id + '|' + category +
+            '">Add to Cart</button><br />';
         html += "</div>";
     });
     return html;
@@ -34,13 +34,13 @@ $("#search_button").click(function () {
     });
 });
 
-$(".add_cart").click(function () {
-    var id_full = $(this).attr('id');
+function cartHandler () {
+    var id_full = this.id;
     var category = id_full.split('|')[1];
     var id = id_full.split('|')[0];
     if (id in shopping_cart) {
         shopping_cart[id] = {
-            'count': shopping_cart[id] + 1,
+            'count': shopping_cart[id].count + 1,
             'category': category
         };
     } else {
@@ -50,23 +50,36 @@ $(".add_cart").click(function () {
         };
     }
     alert("Added to cart!");
-});
+}
+
+$(document).on('click', '.add_cart', cartHandler);
 
 $("#cart").click(function () {
     var html = '';
+
+    html += '<div class="item">';
+    html += 'Checkout your shopping cart items.<br /><br />';
     for (k in shopping_cart) {
         var id = k,
             count = shopping_cart[id].count,
             category = shopping_cart[id].category,
-            item = {};
+            title = '';
 
-        $.getJSON('/' + category + '/' + id,
-                  function (data) {
-                      item = data;
-                  });
+        $.ajax({
+            url: '/' + category + '/' + id,
+            dataType: 'json',
+            async: false,
+            data: null,
+            success: function(data) {
+                title = data.title;
+            }
+        });
 
-        html += 'item:' + item.title + '<br />';
-        html += 'count:' + count + '<br />';
+        html += 'item: ' + title + '<br />';
+        html += 'category: ' + category + '<br />';
+        html += 'count: ' + count + '<br />';
         html += '<br />';
     }
+    html += '</div>';
+    $('#content').html(html);
 });
