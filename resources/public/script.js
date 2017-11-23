@@ -11,13 +11,13 @@ function renderItem(item) {
     var html = "";
     item.forEach(function (e) {
         html += '<div class="item">';
-        html += "Product Name: " + e.title + "<br /><br />";
+        html += "<b>Product Name:</b> " + e.title + "<br /><br />";
         html += '<img src="img/' + e.image + '" width="200" height="200" /><br /><br />';
         html += e.tag + "<br /><br />";
-        html += "Description: " + e.description + "<br />";
-        html += "Size: " + e.size + "<br />";
-        html += "Weight: " + e.weight + "<br />";
-        html += "Cost: $" + e.cost + "<br /><br />";
+        html += "<b>Description:</b> " + e.description + "<br /><br />";
+        html += "<b>Size: </b>" + e.size + "<br /><br />";
+        html += "<b>Weight: </b>" + e.weight + "<br /><br />";
+        html += "<b>Cost:</b> $" + e.cost + "<br /><br />";
         html += "<button>Add to Cart</button>";
         html += "</div>";
     });
