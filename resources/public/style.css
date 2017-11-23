@@ -27,10 +27,18 @@ h1 {
 #intro {
     float: left;
     margin: 0.5em 0.5em 0.5em 1em;
-    width: 800;
+    width: 1000;
     word-wrap: break-word;
     color: white;
     font-size: large;
+}
+.item {
+    margin: 0.4em;
+    background-color: #C0C0C0;
+}
+img.wrap {
+    float: left;
+    padding: 1em
 }
 
 /* -- Header -- */
@@ -50,7 +58,7 @@ footer {
     clear: both;
     text-align: center;
     padding: 0;
-    height: 10%;
+    height: 100px;
     width: 100%;
     border: 1px solid rgb(241, 165, 64);
     margin: 0px auto;
@@ -139,11 +147,14 @@ span.tab {
     text-decoration: none;
 }
 #category {
-    height: 43px;    
+    height: 43px; 
+    margin-left: 50em
+}
+#cart {
+    float: right;
 }
 
 /* -- Advertisements -- */
-
 #random_ad {
     padding: 0px;
     display: block;
@@ -152,8 +163,26 @@ span.tab {
     max-width: 100%;
     float: right;
 }
-
-.item {
-    margin: 0.4em;
-    background-color: #C0C0C0;
+@media all and (max-width: 1200px) {
+    #random_ad {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.5, 0.5);
+    }
+}
+@media only screen and (max-width: 900px) {
+    #random_ad {
+        display: none;
+    }
+}
+@media all and (max-width: 1400px) {
+    #intro {
+        width: 500;
+        word-wrap: break-word;
+    }
+}
+@media all and (max-width: 1400px) {
+    #category {
+        margin-left: 0
+    }
 }

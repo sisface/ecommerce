@@ -11,9 +11,9 @@ function renderItem(item) {
     var html = "";
     item.forEach(function (e) {
         html += '<div class="item">';
-        html += '<img src="img/' + e.image + '" width="200" height="200" /><br />';
         html += "Product Name: " + e.title + "<br />";
-        html += "Tag: " + e.tag + "<br /><br />";
+        html += '<img src="img/' + e.image + '" width="200" height="200" /><br />';
+        html += "Tag: " + e.tag + "<br />";
         html += "Description: " + e.description + "<br />";
         html += "Size: " + e.size + "<br />";
         html += "Weight: " + e.weight + "<br />";
@@ -22,6 +22,15 @@ function renderItem(item) {
     });
     return html;
 }
+
+// Temporarily a immediately-executed function.  Change this later to be called
+// by an event handler.
+(function () {
+    $.getJSON( "/accessory", function(data) {
+        $("#content").html(renderItem(data));
+    });
+})();
+
 
 $("#search_button").click(function () {
     var selected_value = $("#category").val();
