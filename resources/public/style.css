@@ -14,7 +14,7 @@ h1 {
     /* equal to footer height */
     margin-bottom: -142px;
 }
-  .page-wrap:after {
+.page-wrap:after {
     content: "";
     display: block;
 }
@@ -50,7 +50,7 @@ footer {
     clear: both;
     text-align: center;
     padding: 0;
-    height: 7%;
+    height: 10%;
     width: 100%;
     border: 1px solid rgb(241, 165, 64);
     margin: 0px auto;
@@ -127,6 +127,19 @@ span.tab {
     border: none;
     padding: 0;
     margin-left: 5px
+}
+#search_button {
+    position: relative;
+    float: right;
+    height: 43px;
+    display: block;
+    background-color: rgb(241, 165, 64);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+#category {
+    height: 43px;    
 }
 
 /* -- Advertisements -- */
