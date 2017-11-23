@@ -6,6 +6,9 @@ body {
     background-image: url("./img/wallpaper.jpg");
     background-size: 100% auto;
 }
+h1 {
+    text-align: center;
+}
 .page-wrap {
     min-height: 100%;
     /* equal to footer height */
@@ -14,6 +17,20 @@ body {
   .page-wrap:after {
     content: "";
     display: block;
+}
+#content {
+    float: left;
+    margin: 0.5em 0.5em 0.5em 1em;
+    width: 800;
+    word-wrap: break-word;
+}
+#intro {
+    float: left;
+    margin: 0.5em 0.5em 0.5em 1em;
+    width: 800;
+    word-wrap: break-word;
+    color: white;
+    font-size: large;
 }
 
 /* -- Header -- */
@@ -110,13 +127,6 @@ span.tab {
     border: none;
     padding: 0;
     margin-left: 5px
-}
-
-#content {
-    float: left;
-    margin: 0.5em 0.5em 0.5em 1em;
-    width: 800;
-    word-wrap: break-word;
 }
 
 /* -- Advertisements -- */

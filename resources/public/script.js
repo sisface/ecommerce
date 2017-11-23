@@ -12,12 +12,12 @@ function renderItem(item) {
     item.forEach(function (e) {
         html += '<div class="item">';
         html += '<img src="img/' + e.image + '" width="200" height="200" /><br />';
-        html += "name: " + e.title + "<br />";
-        html += "tag: " + e.tag + "<br />";
-        html += "description: " + e.description + "<br />";
-        html += "size: " + e.size + "<br />";
-        html += "weight: " + e.weight + "<br />";
-        html += "cost: $" + e.cost + "<br />";
+        html += "Product Name: " + e.title + "<br />";
+        html += "Tag: " + e.tag + "<br /><br />";
+        html += "Description: " + e.description + "<br />";
+        html += "Size: " + e.size + "<br />";
+        html += "Weight: " + e.weight + "<br />";
+        html += "Cost: $" + e.cost + "<br />";
         html += "</div>";
     });
     return html;
