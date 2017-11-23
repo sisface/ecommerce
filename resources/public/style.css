@@ -9,7 +9,7 @@ body {
 .page-wrap {
     min-height: 100%;
     /* equal to footer height */
-    margin-bottom: -142px; 
+    margin-bottom: -142px;
 }
   .page-wrap:after {
     content: "";
@@ -27,7 +27,7 @@ body {
 
 /* -- Footer -- */
 footer, .page-wrap:after {
-    height: 142px; 
+    height: 142px;
 }
 footer {
     clear: both;
@@ -114,6 +114,9 @@ span.tab {
 
 #content {
     float: left;
+    margin: 0.5em 0.5em 0.5em 1em;
+    width: 800;
+    word-wrap: break-word;
 }
 
 /* -- Advertisements -- */
@@ -126,6 +129,8 @@ span.tab {
     max-width: 100%;
     float: right;
 }
-@media screen and (max-width: 600px) {    
-    #random_ad {display:none;}
-}  
+
+.item {
+    margin: 0.4em;
+    background-color: #C0C0C0;
+}
