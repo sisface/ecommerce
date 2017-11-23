@@ -13,11 +13,11 @@ function renderItem(item) {
         html += '<div class="item">';
         html += "Product Name: " + e.title + "<br />";
         html += '<img src="img/' + e.image + '" width="200" height="200" /><br />';
-        html += "Tag: " + e.tag + "<br />";
+        html += "Tag: " + e.tag + "<br /><br />";
         html += "Description: " + e.description + "<br />";
         html += "Size: " + e.size + "<br />";
         html += "Weight: " + e.weight + "<br />";
-        html += "Cost: $" + e.cost + "<br />";
+        html += "Cost: $" + e.cost + "<br /><br />";
         html += "<button>Add to Cart</button>";
         html += "</div>";
     });
