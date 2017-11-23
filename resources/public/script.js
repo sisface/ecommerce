@@ -23,15 +23,6 @@ function renderItem(item) {
     return html;
 }
 
-// Temporarily a immediately-executed function.  Change this later to be called
-// by an event handler.
-(function () {
-    $.getJSON( "/accessory", function(data) {
-        $("#content").html(renderItem(data));
-    });
-})();
-
-
 $("#search_button").click(function () {
     var selected_value = $("#category").val();
     $.getJSON( "/" + selected_value, function(data) {
