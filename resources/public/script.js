@@ -107,10 +107,10 @@ $("#cart").click(function () {
     html += '<tr><td>Credit Card CSV:</td><td><input type="text" id="creditcardcsv" placeholder="XXX" required /> (security code)</td></tr>';
     html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" name="expiration date" value="" class="dropdate" required> (expiration date)';
     $(document).ready(function(){
-            $('.dropdate').dropdate({
-              dateFormat:'mm/dd/yyyy'
+        $('.dropdate').dropdate({
+            dateFormat:'mm/dd/yyyy'
             });
-            });
+        });
     html += '</td></tr>';
     html += '</table>';
     html += '<p><b>Comments:</b><br><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
