@@ -70,7 +70,7 @@ $("#cart").click(function () {
 
     html += '<div class="item">';
     html += '<h1>Checkout</h1><br /><br />';
-    html += '<p>Items in your shopping cart</p><br /><br />';    
+    html += '<h2>Items in your shopping cart<h2><br /><br />';    
     for (k in shopping_cart) {
         var id = k,
             count = shopping_cart[id].count,
@@ -104,7 +104,7 @@ $("#cart").click(function () {
     html += '</form>';
     html += '<br /><br />'; 
     html += '<input type="button" id="cobutton" value="Submit" onclick=alert("Purchase confirmation");" />';
-    html += '<input type="button" name="cancel" value="Cancel" onclick="window.location="./index.html" />';
+    html += '<input type="button" name="cancel" value="Cancel" onclick="window.location="http://macroexpand.com:3000/index.html" />';
     html += '<br /><br />';
     html += '</div>';
     $('#content').html(html);
