@@ -65,12 +65,12 @@ function cartHandler () {
 
 $(document).on('click', '.add_cart', cartHandler);
 
-$(document).on(function(){
+/* $(document).on(function(){
     $('.dropdate').dropdate({
         dateFormat:'mm/dd/yyyy'
         });
     });
-
+ */
 $("#cart").click(function () {
     var html = '';
 
