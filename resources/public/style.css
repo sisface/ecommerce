@@ -193,7 +193,7 @@ span.tab {
         -webkit-transform: scale(0.5, 0.5);
     }
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 700px) {
     img.wrap {
         display: none;
     }

@@ -69,7 +69,8 @@ $("#cart").click(function () {
     var html = '';
 
     html += '<div class="item">';
-    html += 'Checkout your shopping cart items.<br /><br />';
+    html += '<h1>Checkout</h1><br /><br />';
+    html += '<p>Items in your shopping cart</p><br /><br />';    
     for (k in shopping_cart) {
         var id = k,
             count = shopping_cart[id].count,
@@ -87,9 +88,13 @@ $("#cart").click(function () {
         });
 
         html += 'item: ' + title + '<br />';
-        html += 'category: ' + category + '<br />';
-        html += 'count: ' + count + '<br />';
+        html += '<b>Category:</b> ' + category + '<br />';
+        html += '<b>Quantity</b>: ' + count + '<br />';
         html += '<br />';
+        html += '<input type="button"/><script type="text/javascript">' +
+         $("#button").click(function () {
+              alert("test");
+          }); + '</script>'
     }
     html += '</div>';
     $('#content').html(html);
