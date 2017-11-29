@@ -112,8 +112,8 @@ $("#cart").click(function () {
             });
         });
     html += '</td></tr>';
-    html += '</table>';
-    html += '<p><b>Comments:</b><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
+    html += '</table><br />';
+    html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
     html += '</form>';
     html += '<br /><br />'; 
     html += '<input type="submit" value="Submit" onclick=alert("Purchase confirmation") />';
