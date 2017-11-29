@@ -65,12 +65,6 @@ function cartHandler () {
 
 $(document).on('click', '.add_cart', cartHandler);
 
-/* $(document).on(function(){
-    $('.dropdate').dropdate({
-        dateFormat:'mm/dd/yyyy'
-        });
-    });
- */
 $("#cart").click(function () {
     var html = '';
 
@@ -123,6 +117,7 @@ $("#cart").click(function () {
     html += '<br /><br />';
     html += '</div>';
     $('#content').html(html);
+});
 
 // Sweet Alert.
 /* swal({
@@ -152,3 +147,11 @@ $("#cart").click(function () {
 //$(".confirm_purchase").click(function () {
 //     swal("Purchase confirmation");
 // });
+
+
+/* $(document).on(function(){
+    $('.dropdate').dropdate({
+        dateFormat:'mm/dd/yyyy'
+        });
+    });
+ */
