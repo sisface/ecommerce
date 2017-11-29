@@ -93,17 +93,17 @@ $("#cart").click(function () {
         html += '<br /><br />';
     }
 
-    html += '<j2>Payment information</h2>';
+    html += '<h2>Payment information</h2><br />';
     html += '<form>';
-    html += 'First name:<br>';
-    html += '<input type="text" name="firstname"><br>'
-    html += 'Last name:<br>';
+    html += 'First name:<br />';
+    html += '<input type="text" name="firstname"><br />'
+    html += 'Last name:<br />';
     html += '<input type="text" name="lastname">';
-    html += 'Last name:<br>';
+    html += 'Last name:<br />';
     html += '<input type="text" name="lastname">';
     html += '</form>';
     html += '<br /><br />'; 
-    html += '<input type="button" id="cobutton" value="Submit" onclick=swal("Purchase confirmation");" />';
+    html += '<input type="button" id="cobutton" value="Submit" onclick=alert("Purchase confirmation");" />';
     html += '<input type="button" name="cancel" value="Cancel" onclick="window.location="./index.html" />';
     html += '<br /><br />';
     html += '</div>';
