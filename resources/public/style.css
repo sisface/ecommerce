@@ -58,13 +58,23 @@ table, td {
 }
 .item {
     margin: 0.4em;
-    background-color: #C0C0C0;
+    background-color: rgb(204, 204, 204);
     padding-top:10px; 
     padding-left:10px;   
 }
 
 /* Buttons */
-.button {
+#search_button {
+    position: relative;
+    float: right;
+    height: 43px;
+    display: block;
+    background-color: rgb(241, 165, 64);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.button, .add_cart {
     display: inline-block;
     border-radius: 4px;
     background-color: #686362;
@@ -208,16 +218,6 @@ span.tab {
     border: none;
     padding: 0;
     margin-left: 5px
-}
-#search_button {
-    position: relative;
-    float: right;
-    height: 43px;
-    display: block;
-    background-color: rgb(241, 165, 64);
-    color: black;
-    text-align: center;
-    text-decoration: none;
 }
 #category {
     height: 43px; 
