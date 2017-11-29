@@ -34,10 +34,6 @@ $("#search_button").click(function () {
     });
 });
 
-<<<<<<< HEAD
-function cartHandler () {
-    var id_full = this.id;
-=======
 $("#about").click(function () {
     var html = '';
         html += '<div class="intro">';
@@ -48,10 +44,9 @@ $("#about").click(function () {
     return html;
 });
 
-// Add to cart.
-$(".add_cart").click(function () {
-    var id_full = $(this).attr('id');
->>>>>>> 5212049ac9e33bce5a183e42499e3b61c3c363ae
+// Shopping cart.
+function cartHandler () {
+    var id_full = this.id;
     var category = id_full.split('|')[1];
     var id = id_full.split('|')[0];
     if (id in shopping_cart) {
@@ -96,37 +91,35 @@ $("#cart").click(function () {
         html += 'count: ' + count + '<br />';
         html += '<br />';
     }
-<<<<<<< HEAD
     html += '</div>';
     $('#content').html(html);
-=======
-    // Sweet Alert.
-    swal({
-        title: 'Purchase confirmation',
-        text: 'Please confirm your information is correct and submit.',
-        type: 'warning',
-        showCancelButton: true,
-        confirmButtonText: 'Submit',
-        cancelButtonText: 'Cancel'
-    }).then((result) => {
-        if (result.value) {
-        swal(
-            'Purchase confirmed!',
-            'Thank you for shopping at Fishermans Allure.',
-            'success'
-        )
-        // result.dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
-        } else if (result.dismiss === 'cancel') {
-        swal(
-            'Cancelled',
-            'Purchase cancelled',
-            'error'
-        )
-        }
-    })
+});
 
-    $(".confirm_purchase").click(function () {
-        swal("Purchase confirmation");
-    });
->>>>>>> 5212049ac9e33bce5a183e42499e3b61c3c363ae
+// Sweet Alert.
+swal({
+    title: 'Purchase confirmation',
+    text: 'Please confirm your information is correct and submit.',
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Submit',
+    cancelButtonText: 'Cancel'
+}).then((result) => {
+    if (result.value) {
+    swal(
+        'Purchase confirmed!',
+        'Thank you for shopping at Fishermans Allure.',
+        'success'
+    )
+    // result.dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
+    } else if (result.dismiss === 'cancel') {
+    swal(
+        'Cancelled',
+        'Purchase cancelled',
+        'error'
+    )
+    }
+})
+
+$(".confirm_purchase").click(function () {
+     swal("Purchase confirmation");
 });
