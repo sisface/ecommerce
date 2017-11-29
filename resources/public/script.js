@@ -44,6 +44,16 @@ $("#about").click(function () {
     $("#content").html(html);
 });
 
+$("#random_ad").click(function () {
+    var html = '';
+        html += '<div id="page wrap">';
+        html += '<h1>UH OH!</h1><br />';
+        html += '<p>Installing horrible virus...please wait.</p>';
+        html += '<br />';
+        html += "</div>";
+    $("#page-wrap").html(html);
+});
+
 // Shopping cart.
 function cartHandler () {
     var id_full = this.id;
@@ -98,7 +108,7 @@ $("#cart").click(function () {
     html += '<button class="button" style="vertical-align:middle"><span>Register </span></button>';
     html += '<br /><br />';
     html += '<p><b>Login</b></p>';
-    html += '<br /><br />';
+    html += '<br />';
     html += '<form>';
     html += 'Account name:<br />';
     html += '<input type="text" name="accountname"><br />';
