@@ -59,6 +59,7 @@ table, td {
 .item {
     margin: 0.4em;
     background-color: #C0C0C0;
+    padding-top:10px; 
     padding-left:10px;   
 }
 
