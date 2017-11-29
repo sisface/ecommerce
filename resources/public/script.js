@@ -105,11 +105,18 @@ $("#cart").click(function () {
     html += '<tr><td>Email Address:</td><td><input type="email" id="emailaddress" placeholder="name@domain.com" required /> (email address)</td></tr>';
     html += '<tr><td>Credit Card Number:</td><td><input type="text" id="creditcardnum" placeholder="XXXXXXXXXXXXXXXX" required /> (credit card number)</td></tr>';
     html += '<tr><td>Credit Card CSV:</td><td><input type="text" id="creditcardcsv" placeholder="XXX" required /> (security code)</td></tr>';
-    html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" id="creditcarddate" placeholder="00/20XX" required /> (expiration date)</td></tr>';
+    html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" name="expiration date" value="" class="dropdate" required> (expiration date)';
+    $(document).ready(function(){
+            $('.dropdate').dropdate({
+              dateFormat:'mm/dd/yyyy'
+            });
+            });
+    html += '</td></tr>';
     html += '</table>';
+    html += '<p><b>Comments:</b><br><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
     html += '</form>';
     html += '<br /><br />'; 
-    html += '<input type="button" id="cobutton" value="Submit" onclick=alert("Purchase confirmation");" />';
+    html += '<input type="submit" value="Submit" onclick=alert("Purchase confirmation") />';
     html += '&nbsp;&nbsp;&nbsp;';    
     html += '<input type="button" name="cancel" value="Cancel" onclick="window.location="http://macroexpand.com:3000/index.html" />';
     html += '<br /><br />';
