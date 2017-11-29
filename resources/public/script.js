@@ -14,7 +14,7 @@ function renderItem(item, category) {
     item.forEach(function (e) {
         html += '<div class="item">';
         html += "<b>Product Name:</b> " + e.title + "<br /><br />";
-        html += '<img src="img/' + e.image + '" width="200" height="200" /><br /><br />';
+        html += '<div class="zoomin"><img src="img/' + e.image + '" width="200" height="200" /></div><br /><br />';
         html += "<i>" + e.tag + "</i><br /><br />";
         html += "<b>Description:</b> " + e.description + "<br /><br />";
         html += "<b>Size: </b>" + e.size + "<br /><br />";
