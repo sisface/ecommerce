@@ -91,10 +91,8 @@ $("#cart").click(function () {
         html += '<b>Category:</b> ' + category + '<br />';
         html += '<b>Quantity</b>: ' + count + '<br />';
         html += '<br /><br />';
-        html += '<input type="button"/><script type="text/javascript">' +
-        $(".confirm_purchase").click(function () {
-            swal("Purchase confirmation");
-       }); + '</script>'
+        html += '<input type="button" id="cobutton" value="Submit" onclick="alert(' + 'test' +');"/>';
+        html += '<br /><br />';
     }
     html += '</div>';
     $('#content').html(html);
