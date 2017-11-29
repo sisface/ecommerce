@@ -21,7 +21,7 @@ function renderItem(item, category) {
         html += "<b>Weight: </b>" + e.weight + "<br /><br />";
         html += "<b>Cost:</b> $" + e.cost + "<br /><br />";
         html += '<button class="add_cart" id="' + e._id + '|' + category +
-            '">Add to Cart</button><br />';
+            '">Add to Cart</button><br /><br />';
         html += "</div>";
     });
     return html;
@@ -69,8 +69,8 @@ $("#cart").click(function () {
     var html = '';
 
     html += '<div class="item">';
-    html += '<h1>Checkout</h1><br /><br />';
-    html += '<h2>Items in your shopping cart</h2><br /><br />';    
+    html += '<h1>Shopping Cart</h1><br /><br />';
+    html += '<h2>Saved Items</h2><br /><br />';    
     for (k in shopping_cart) {
         var id = k,
             count = shopping_cart[id].count,
@@ -93,6 +93,21 @@ $("#cart").click(function () {
         html += '<br /><br />';
     }
 
+    html += '<br /><br />';
+    html += '<p><b>Returning Customer?  Log in or register now.</b></p>';
+    html += '<button class="button" style="vertical-align:middle"><span>Register </span></button>';
+    html += '<br /><br />';
+    html += '<p><b>Login</b></p>';
+    html += '<br /><br />';
+    html += '<form>';
+    html += 'Account name:<br />';
+    html += '<input type="text" name="accountname"><br />';
+    html += 'Password:<br />';
+    html += '<input type="password" name="password"><br />';
+    html += '</form>'; 
+    html += '<br /><br />';
+    html += '<p><b><Check out as guest</b></p>';
+    html += '<br /><br />';
     html += '<h2>Payment information</h2><br />';
     html += '<form>';
     html += '<table><tr><td>First Name:</td><td><input type="text" id="firstName" placeholder="Bric" required /> (first name)</td></tr>';
@@ -111,10 +126,9 @@ $("#cart").click(function () {
     html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
     html += '</form>';
     html += '<br /><br />'; 
-    html += '<input type="submit" value="Submit" onclick=alert("Purchase confirmation") />';
+    html += '<button class="button" style="vertical-align:middle"><span>Checkout </span></button>';
     html += '&nbsp;&nbsp;&nbsp;';    
-    html += '<input type="button" name="cancel" value="Cancel" onclick="window.location="http://macroexpand.com:3000/index.html" />';
-    html += '<br /><br />';
+    html += '<button class="button" style="vertical-align:middle">Cancel</button>';
     html += '</div>';
     $('#content').html(html);
 });
