@@ -95,12 +95,18 @@ $("#cart").click(function () {
 
     html += '<h2>Payment information</h2><br />';
     html += '<form>';
-    html += 'First name:<br />';
-    html += '<input type="text" name="firstname"><br />'
-    html += 'Last name:<br />';
-    html += '<input type="text" name="lastname">';
-    html += 'Last name:<br />';
-    html += '<input type="text" name="lastname">';
+    html += '<table><tr><td>First Name:</td><td><input type="text" id="firstName" placeholder="Bric" required /> (first name)</td></tr>';
+    html += '<tr><td>Last Name:</td><td><input type="text" id="lastName" placeholder="Mahr" required /> (last name)</td></tr>';
+    html += '<tr><td>Street Address:</td><td><input type="text" id="streetaddress" placeholder="4400 University Drive" required /> (street address)</td></tr>';
+    html += '<tr><td>City:</td><td><input type="text" id="city" placeholder="Fairfax" required /> (city)</td></tr>';
+    html += '<tr><td>State:</td><td><input type="text" id="state" placeholder="Virginia" required /> (state)</td></tr>';
+    html += '<tr><td>Zip Code:</td><td><input type="text" id="zipcode" placeholder="22030" required /> (zip code)</td></tr>';
+    html += '<tr><td>Telephone Number:</td><td><input type="tel" id="telephonenumber" placeholder="(XXX) XXX-XXXX" required /> (telephone number)</td></tr>';
+    html += '<tr><td>Email Address:</td><td><input type="email" id="emailaddress" placeholder="name@domain.com" required /> (email address)</td></tr>';
+    html += '<tr><td>Credit Card Number:</td><td><input type="text" id="creditcardnum" placeholder="XXXXXXXXXXXXXXXX" required /> (credit card number)</td></tr>';
+    html += '<tr><td>Credit Card CSV:</td><td><input type="text" id="creditcardcsv" placeholder="XXX" required /> (credit card number)</td></tr>';
+    html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" id="creditcarddate" placeholder="00/20XX" required /> (credit card number)</td></tr>';
+    html += '</table>';
     html += '</form>';
     html += '<br /><br />'; 
     html += '<input type="button" id="cobutton" value="Submit" onclick=alert("Purchase confirmation");" />';
