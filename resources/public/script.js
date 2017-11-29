@@ -87,11 +87,18 @@ $("#cart").click(function () {
             }
         });
 
-        html += 'item: ' + title + '<br />';
+        html += 'Item: ' + title + '<br />';
         html += '<b>Category:</b> ' + category + '<br />';
         html += '<b>Quantity</b>: ' + count + '<br />';
         html += '<br /><br />';
-        html += '<input type="button" id="cobutton" value="Submit" onclick="alert(' + 'test' +');"/>';
+        html += '<form>';
+        html += 'First name:<br>';
+        html += '<input type="text" name="firstname"><br>'
+        html += 'Last name:<br>';
+        html += '<input type="text" name="lastname">';
+        html += '</form>';
+        html += '<br /><br />'; 
+        html += '<input type="button" id="cobutton" value="Submit" onclick=swal("Purchase confirmation");"/>';
         html += '<br /><br />';
     }
     html += '</div>';
