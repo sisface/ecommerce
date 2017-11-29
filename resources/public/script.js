@@ -104,8 +104,8 @@ $("#cart").click(function () {
     html += '<tr><td>Telephone Number:</td><td><input type="tel" id="telephonenumber" placeholder="(XXX) XXX-XXXX" required /> (telephone number)</td></tr>';
     html += '<tr><td>Email Address:</td><td><input type="email" id="emailaddress" placeholder="name@domain.com" required /> (email address)</td></tr>';
     html += '<tr><td>Credit Card Number:</td><td><input type="text" id="creditcardnum" placeholder="XXXXXXXXXXXXXXXX" required /> (credit card number)</td></tr>';
-    html += '<tr><td>Credit Card CSV:</td><td><input type="text" id="creditcardcsv" placeholder="XXX" required /> (credit card number)</td></tr>';
-    html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" id="creditcarddate" placeholder="00/20XX" required /> (credit card number)</td></tr>';
+    html += '<tr><td>Credit Card CSV:</td><td><input type="text" id="creditcardcsv" placeholder="XXX" required /> (security code)</td></tr>';
+    html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" id="creditcarddate" placeholder="00/20XX" required /> (expiration date)</td></tr>';
     html += '</table>';
     html += '</form>';
     html += '<br /><br />'; 
