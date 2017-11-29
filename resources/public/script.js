@@ -6,7 +6,7 @@ var shopping_cart = {};
 // This code will be called whenever the document is finished loading, I guess.
 $(document).ready(function() {
     var image_name = images[Math.floor(Math.random() * images.length)];
-    $('#random_ad').html('<a href="#"><img src="img/' + image_name +'" /></a>');
+    $('#random_ad').html('<a href="./virus.html"><img src="img/' + image_name +'" /></a>');
 });
 
 function renderItem(item, category) {
@@ -42,16 +42,6 @@ $("#about").click(function () {
         html += '<br />';
         html += "</div>";
     $("#content").html(html);
-});
-
-$("#random_ad").click(function () {
-    var html = '';
-    html += '<div id="main">';
-    html += '<h1>Uh oh!</h1><br />';
-    html += '<p>Installing horrible virus...please wait.</p>';
-    html += '<br />';
-    html += "</div>";
-$("#content").html(html);
 });
 
 // Shopping cart.
