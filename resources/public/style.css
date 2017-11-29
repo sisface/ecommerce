@@ -30,7 +30,6 @@ hr.symbol:after {
 }
 .page-wrap {
     min-height: 100%;
-    /* equal to footer height */
     margin-bottom: -142px;
 }
 .page-wrap:after {
@@ -50,15 +49,20 @@ hr.symbol:after {
     word-wrap: break-word;
     color: white;
     font-size: large;
-    text-align: justify;
 }
 .item {
     margin: 0.4em;
     background-color: #C0C0C0;
 }
+
+/* Images */
 img.wrap {
     float: left;
     padding: 1em
+}
+#cart {
+    float: right;
+    display: block;
 }
 
 /* -- Header -- */
@@ -170,9 +174,6 @@ span.tab {
     height: 43px; 
     margin-left: 50em
 }
-#cart {
-    float: right;
-}
 
 /* -- Advertisements -- */
 #random_ad {
@@ -183,11 +184,18 @@ span.tab {
     max-width: 100%;
     float: right;
 }
+
+/* -- Fluid layout -- */
 @media all and (max-width: 1200px) {
     #random_ad {
         transform: scale(0.5, 0.5);
         -ms-transform: scale(0.5, 0.5);
         -webkit-transform: scale(0.5, 0.5);
+    }
+}
+@media all and (max-width: 500px) {
+    img.wrap {
+        display: none;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -201,8 +209,77 @@ span.tab {
         word-wrap: break-word;
     }
 }
+@media all and (max-width: 500px) {
+    #intro {
+        width: 250px;
+        word-wrap: break-word;
+    }
+}
 @media all and (max-width: 1400px) {
     #category {
         margin-left: 0
+    }
+}
+@media only screen and (max-width: 500px) {
+    .navbar {
+        height: 200px;
+        width: 300px;
+        border: 1px solid rgb(241, 165, 64);
+        margin: 0px auto;
+        color: white;
+    }
+    #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        color: white;
+    }   
+    #navbar li {
+        display: block;
+        text-align: center;
+        position: relative;
+        padding-left: 50px
+    } 
+    #navbar li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        width: 200px;
+    }
+    #navbar li a:hover {
+        background-color: rgb(241, 165, 64);
+        width: 200px;
+        color: black;
+    }
+    #search {
+        float: left;
+        right: 12px;
+        top: 10px;
+        width: 200px;
+        text-align: right
+    }
+    #search .button {
+        width: 200px;
+        height: 17px;
+        border: none;
+        padding: 3px 12px
+    }
+    #search .submit {
+        width: 22px;
+        height: 23px;
+        border: none;
+        padding: 0;
+        margin-left: 5px
+    }
+    #search_button {
+        position: relative;
+        float: left;
+        height: 43px;
+        display: block;
+        background-color: rgb(241, 165, 64);
+        color: black;
+        text-align: center;
+        text-decoration: none;
     }
 }
