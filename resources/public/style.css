@@ -58,6 +58,8 @@ table, td {
 }
 .item {
     margin: 0.4em;
+    width: 800;
+    word-wrap: break-word;
     background-color: rgb(204, 204, 204);
     padding-top:10px; 
     padding-left:10px;   
