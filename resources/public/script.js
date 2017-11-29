@@ -90,11 +90,11 @@ $("#cart").click(function () {
         html += 'item: ' + title + '<br />';
         html += '<b>Category:</b> ' + category + '<br />';
         html += '<b>Quantity</b>: ' + count + '<br />';
-        html += '<br />';
+        html += '<br /><br />';
         html += '<input type="button"/><script type="text/javascript">' +
-         $("#button").click(function () {
-              alert("test");
-          }); + '</script>'
+        $(".confirm_purchase").click(function () {
+            swal("Purchase confirmation");
+       }); + '</script>'
     }
     html += '</div>';
     $('#content').html(html);
