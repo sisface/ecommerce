@@ -6,7 +6,7 @@ var shopping_cart = {};
 // This code will be called whenever the document is finished loading, I guess.
 $(document).ready(function() {
     var image_name = images[Math.floor(Math.random() * images.length)];
-    $('#random_ad').html('<img src="img/' + image_name +'" />');
+    $('#random_ad').html('<a href="#"><img src="img/' + image_name +'" /></a>');
 });
 
 function renderItem(item, category) {
