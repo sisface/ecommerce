@@ -9,6 +9,25 @@ body {
 h1 {
     text-align: center;
 }
+hr {
+    background: rgb(241, 165, 64);
+    height: 1px;
+}
+hr.symbol {    
+    padding: 0;
+    border: none;
+    border-top: medium double y;
+    color: rgb(241, 165, 64);
+    text-align: center;
+}    
+hr.symbol:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;   
+}
 .page-wrap {
     min-height: 100%;
     /* equal to footer height */
@@ -31,6 +50,7 @@ h1 {
     word-wrap: break-word;
     color: white;
     font-size: large;
+    text-align: justify;
 }
 .item {
     margin: 0.4em;

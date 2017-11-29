@@ -34,8 +34,24 @@ $("#search_button").click(function () {
     });
 });
 
+<<<<<<< HEAD
 function cartHandler () {
     var id_full = this.id;
+=======
+$("#about").click(function () {
+    var html = '';
+        html += '<div class="intro">';
+        html += '<h1>Who is macroexpand?</h1>';
+        html += '<p>macroexpand is a jack-of-all trades company which enthusiastically incubates front-end e-commerce. Our exploratory research points to regenerated third-generation matrix approaches.  Today marks the 20th anniversary celebrations of our regenerated strategic matrix approaches.  At base level, this just comes down to authoritatively visualizing backend methodologies.  As such, we have harnessed 24/7 web-readiness in order to quickly foster cross-unit web services.  macroexpand proactively drives frictionless supply chains by re-engineering client-based e-tailers by globally utilizing best-of-breed networks to quickly seize dynamic strategic theme areas and thus phosfluorescently underwhelm functionalized customer service. Contact us to learn more about how to monotonectally transform e-business ideas to competently implement enterprise-wide results.</p>';
+        html += '<br />';
+        html += "</div>";
+    return html;
+});
+
+// Add to cart.
+$(".add_cart").click(function () {
+    var id_full = $(this).attr('id');
+>>>>>>> 5212049ac9e33bce5a183e42499e3b61c3c363ae
     var category = id_full.split('|')[1];
     var id = id_full.split('|')[0];
     if (id in shopping_cart) {
@@ -80,6 +96,37 @@ $("#cart").click(function () {
         html += 'count: ' + count + '<br />';
         html += '<br />';
     }
+<<<<<<< HEAD
     html += '</div>';
     $('#content').html(html);
+=======
+    // Sweet Alert.
+    swal({
+        title: 'Purchase confirmation',
+        text: 'Please confirm your information is correct and submit.',
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Submit',
+        cancelButtonText: 'Cancel'
+    }).then((result) => {
+        if (result.value) {
+        swal(
+            'Purchase confirmed!',
+            'Thank you for shopping at Fishermans Allure.',
+            'success'
+        )
+        // result.dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
+        } else if (result.dismiss === 'cancel') {
+        swal(
+            'Cancelled',
+            'Purchase cancelled',
+            'error'
+        )
+        }
+    })
+
+    $(".confirm_purchase").click(function () {
+        swal("Purchase confirmation");
+    });
+>>>>>>> 5212049ac9e33bce5a183e42499e3b61c3c363ae
 });
