@@ -65,7 +65,7 @@ function cartHandler () {
 
 $(document).on('click', '.add_cart', cartHandler);
 
-$("#overlay").click(function () {
+$("#cart").click(function () {
     var html = '';
 
     html += '<div class="item">';
