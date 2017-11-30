@@ -47,7 +47,7 @@ $("#about").click(function () {
 $("#confirmation").click(function () {
     var html = '';
         html += '<div id="intro">';
-        html += '<h1>Thank you for your patronage</h1><br />';
+        html += '<h1>Thank you for your patronage.</h1><br />';
         html += '<p>Your credit card information is being processed.  Please allow 6 to 8 weeks for delivery</p>';
         html += '<br />';
         html += "</div>";
@@ -139,7 +139,7 @@ $("#cart").click(function () {
     html += '<br /><br />'; 
     html += '<button class="button" id="confirmation" style="vertical-align:middle"><span>Checkout </span></button>';
     html += '&nbsp;&nbsp;&nbsp;';    
-    html += '<a href="#"><button class="button" style="vertical-align:middle">Cancel</button></a>';
+    html += '<span id="confirmation"><a href="#"><button class="button" style="vertical-align:middle">Cancel</button></a</span>';
     html += '</div>';
     $('#content').html(html);
 });
