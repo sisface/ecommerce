@@ -126,7 +126,7 @@ img.wrap {
 }
 .swap:hover .overlay {
     position: absolute;
-    float: left;
+    float: right;
     width: 48px;
     height: 48px;
     z-index: 100;
