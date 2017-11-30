@@ -122,7 +122,7 @@ $("#cart").click(function () {
     html += '<tr><td>Email Address:</td><td><input type="email" id="emailaddress" placeholder="name@domain.com" required /> (email address)</td></tr>';
     html += '<tr><td>Credit Card Number:</td><td><input type="text" id="creditcardnum" placeholder="XXXXXXXXXXXXXXXX" required /> (credit card number)</td></tr>';
     html += '<tr><td>Credit Card CSV:</td><td><input type="text" id="creditcardcsv" placeholder="XXX" required /> (security code)</td></tr>';
-    html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" name="expiration date" value="" class="dropdate" required> (expiration date)';
+    html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" id="creditcarddate" placeholder="XX/XX" required /> (month/year)</td></tr>';
     html += '</td></tr>';
     html += '</table><br />';
     html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
