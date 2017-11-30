@@ -45,17 +45,6 @@ $("#about").click(function () {
     $("#content").html(html);
 });
 
-$("#confirmation").click(function () {
-    var html = '';
-        html += '<div id="intro">';
-        html += '<h1>Thank you for your patronage.</h1>';
-        html += '<br />';
-        html += '<p>Your credit card information is being processed.  Please allow 6 to 8 weeks for delivery</p>';
-        html += '<br />';
-        html += "</div>";
-    $("#content").html(html);
-});
-
 // Shopping cart.
 function cartHandler () {
     var id_full = this.id;
@@ -82,7 +71,7 @@ $("#cart").click(function () {
 
     html += '<div class="item">';
     html += '<h1>Shopping Cart</h1><br /><br />';
-    html += '<h2>Saved Items</h2><br /><br />';    
+    html += '<h2>Saved Items</h2><br /><br />';
     for (k in shopping_cart) {
         var id = k,
             count = shopping_cart[id].count,
@@ -117,7 +106,7 @@ $("#cart").click(function () {
     html += 'Password:<br />';
     html += '<input type="password" name="password"><br />';
     html += '<button class="button" style="vertical-align:middle">Login</button>';
-    html += '</form>'; 
+    html += '</form>';
     html += '<br /><br />';
     html += '<p><b><Check out as guest</b></p>';
     html += '<br /><br />';
@@ -138,10 +127,21 @@ $("#cart").click(function () {
     html += '</table><br />';
     html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
     html += '</form>';
-    html += '<br /><br />'; 
-    html += '<span id="confirmation"><a href="#"><button class="button" style="vertical-align:middle"><span>Checkout </span></button></a></span>';
-    html += '&nbsp;&nbsp;&nbsp;';    
-    html += '<button class="button" style="vertical-align:middle" onclick="window.location.href="macroexpand.com:3000">Cancel</button>';
+    html += '<br /><br />';
+    html += '<button class="button" style="vertical-align:middle" id="submit">Checkout</button>';
+    html += '&nbsp;&nbsp;&nbsp;';
     html += '</div>';
     $('#content').html(html);
+});
+
+
+$(document).on('click', '#submit', function () {
+    var html = '';
+    html += '<div id="intro">';
+    html += '<h1>Thank you for your patronage.</h1>',
+    html += '<br />';
+    html += '<p>Your credit card information is being processed.  Please allow 6 to 8 weeks for delivery</p>';
+    html += '<br />';
+    html += "</div>";
+    $("#content").html(html);
 });
