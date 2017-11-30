@@ -139,7 +139,7 @@ $("#cart").click(function () {
     html += '<br /><br />'; 
     html += '<button class="button" id="confirmation" style="vertical-align:middle"><span>Checkout </span></button>';
     html += '&nbsp;&nbsp;&nbsp;';    
-    html += '<span id="confirmation"><a href="#"><button class="button" style="vertical-align:middle">Cancel</button></a</span>';
+    html += '<span id="confirmation"><a href="#"><button class="button" style="vertical-align:middle">Cancel</button></a></span>';
     html += '</div>';
     $('#content').html(html);
 });
