@@ -104,6 +104,7 @@ $("#cart").click(function () {
     html += '<input type="text" name="accountname"><br />';
     html += 'Password:<br />';
     html += '<input type="password" name="password"><br />';
+    html += '<button class="button" style="vertical-align:middle">Login</button>';
     html += '</form>'; 
     html += '<br /><br />';
     html += '<p><b><Check out as guest</b></p>';
