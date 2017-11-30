@@ -44,6 +44,16 @@ $("#about").click(function () {
     $("#content").html(html);
 });
 
+$("#confirmation").click(function () {
+    var html = '';
+        html += '<div id="intro">';
+        html += '<h1>Thank you for your patronage</h1><br />';
+        html += '<p>Your credit card information is being processed.  Please allow 6 to 8 weeks for delivery</p>';
+        html += '<br />';
+        html += "</div>";
+    $("#content").html(html);
+});
+
 // Shopping cart.
 function cartHandler () {
     var id_full = this.id;
@@ -129,7 +139,7 @@ $("#cart").click(function () {
     html += '<br /><br />'; 
     html += '<button class="button" style="vertical-align:middle"><span>Checkout </span></button>';
     html += '&nbsp;&nbsp;&nbsp;';    
-    html += '<button class="button" style="vertical-align:middle">Cancel</button>';
+    html += '<button class="button" id="confirmation" style="vertical-align:middle">Cancel</button>';
     html += '</div>';
     $('#content').html(html);
 });
