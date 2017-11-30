@@ -124,19 +124,15 @@ img.wrap {
     float: right;
     display: block;
 }
-.tilt {
-    -webkit-transition: all 0.5s ease;
-       -moz-transition: all 0.5s ease;
-         -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-  }   
-.tilt:hover {
-    -webkit-transform: rotate(-10deg);
-       -moz-transform: rotate(-10deg);
-         -o-transform: rotate(-10deg);
-        -ms-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+.bw {
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+  }
+.bw:hover {
+    -webkit-filter: grayscale(100%);
 }
 .zoomin img { 
     height: 200px; 
