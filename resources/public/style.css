@@ -131,8 +131,7 @@ img.wrap {
     transition: all 2s ease;
 } 
 .zoom img:hover { 
-    width: 60px; 
-    height: 60px;
+    background-image: url('./img/cart2.png');
 }
 .zoomin img { 
     height: 200px; 
