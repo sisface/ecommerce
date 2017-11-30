@@ -141,7 +141,7 @@ $("#cart").click(function () {
     html += '<br /><br />'; 
     html += '<span id="confirmation"><a href="#"><button class="button" style="vertical-align:middle"><span>Checkout </span></button></a></span>';
     html += '&nbsp;&nbsp;&nbsp;';    
-    html += '<button class="button" style="vertical-align:middle">Cancel</button>';
+    html += '<button class="button" style="vertical-align:middle" onclick="window.location.href="macroexpand.com:3000">Cancel</button>';
     html += '</div>';
     $('#content').html(html);
 });
