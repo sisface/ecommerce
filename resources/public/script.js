@@ -65,7 +65,7 @@ function cartHandler () {
 
 $(document).on('click', '.add_cart', cartHandler);
 
-$("#cart").click(function () {
+$("#swap").click(function () {
     var html = '';
 
     html += '<div class="item">';
