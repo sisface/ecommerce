@@ -125,6 +125,8 @@ img.wrap {
     display: block;
 }
 .swap:hover .overlay {
+    float: right;
+    display: block;
     position:absolute;
     width: 48px;
     height: 48px;
