@@ -137,9 +137,9 @@ $("#cart").click(function () {
     html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
     html += '</form>';
     html += '<br /><br />'; 
-    html += '<button class="button" id="confirmation" style="vertical-align:middle"><span>Checkout </span></button>';
+    html += '<span id="confirmation"><a href="#"><button class="button" id="confirmation" style="vertical-align:middle"><span>Checkout </span></button></a></span>';
     html += '&nbsp;&nbsp;&nbsp;';    
-    html += '<span id="confirmation"><a href="#"><button class="button" style="vertical-align:middle">Cancel</button></a></span>';
+    html += '<button class="button" style="vertical-align:middle">Cancel</button>';
     html += '</div>';
     $('#content').html(html);
 });
