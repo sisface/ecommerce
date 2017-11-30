@@ -37,7 +37,8 @@ $("#search_button").click(function () {
 $("#about").click(function () {
     var html = '';
         html += '<div id="intro">';
-        html += '<h1>Who is macroexpand?</h1><br />';
+        html += '<h1>Who is macroexpand?</h1>';
+        html += '<br />';
         html += '<p>macroexpand is a jack-of-all trades company which enthusiastically incubates front-end e-commerce. Our exploratory research points to regenerated third-generation matrix approaches.  This year marks the 20th anniversary celebrations of our regenerated strategic matrix approaches.  At base level, this just comes down to authoritatively visualizing backend methodologies.  As such, we have harnessed 24/7 web-readiness in order to quickly foster cross-unit web services.  macroexpand proactively drives frictionless supply chains by re-engineering client-based e-tailers by globally utilizing best-of-breed networks to quickly seize dynamic strategic theme areas and thus phosfluorescently underwhelm functionalized customer service. Contact us to learn more about how to monotonectally transform e-business ideas to competently implement enterprise-wide results.</p>';
         html += '<br />';
         html += "</div>";
@@ -47,7 +48,8 @@ $("#about").click(function () {
 $("#confirmation").click(function () {
     var html = '';
         html += '<div id="intro">';
-        html += '<h1>Thank you for your patronage.</h1><br />';
+        html += '<h1>Thank you for your patronage.</h1>';
+        html += '<br />';
         html += '<p>Your credit card information is being processed.  Please allow 6 to 8 weeks for delivery</p>';
         html += '<br />';
         html += "</div>";
