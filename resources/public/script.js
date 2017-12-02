@@ -125,7 +125,7 @@ $("#cart").click(function () {
     html += '<tr><td>Credit Card Expiration Date:</td><td>';
     html += '<select id="gMonth1">';
     html += '<option value="">--Select Month--</option>';
-    html += '<option selected value="1">Janaury</option>';
+    html += '<option selected value="1">January</option>';
     html += '<option value="2">February</option>';
     html += '<option value="3">March</option>';
     html += '<option value="4">April</option>';
@@ -138,6 +138,7 @@ $("#cart").click(function () {
     html += '<option value="11">November</option>';
     html += '<option value="12">December</option>';
     html += '</select>';
+    html += '<input type="text" id="creditcardyear" placeholder="XX" required /> (expiration month/year)';
     html += '</td></tr>';
     html += '</td></tr>';
       
