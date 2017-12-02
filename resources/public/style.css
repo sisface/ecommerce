@@ -34,14 +34,6 @@ table, td {
   td {
     padding: 5px;
 }
-.page-wrap {
-    min-height: 100%;
-    margin-bottom: -142px;
-}
-.page-wrap:after {
-    content: "";
-    display: block;
-}
 #content {
     float: left;
     margin: 0.5em 0.5em 0.5em 1em;
