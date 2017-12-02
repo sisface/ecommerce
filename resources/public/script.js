@@ -9,6 +9,7 @@ $(document).ready(function() {
     $('#random_ad').html('<a href="./virus.html"><img src="img/' + image_name +'" /></a>');
 });
 
+// Product Listing Page.
 function renderItem(item, category) {
     var html = "";
     item.forEach(function (e) {
@@ -27,6 +28,7 @@ function renderItem(item, category) {
     return html;
 }
 
+// Search Button.
 $("#search_button").click(function () {
     var selected_value = $("#category").val();
     $.getJSON( "/" + selected_value, function(data) {
@@ -34,6 +36,7 @@ $("#search_button").click(function () {
     });
 });
 
+// About Page.
 $("#about").click(function () {
     var html = '';
         html += '<div id="intro">';
@@ -66,6 +69,7 @@ function cartHandler () {
 
 $(document).on('click', '.add_cart', cartHandler);
 
+// Shopping Cart Page.
 $("#cart").click(function () {
     var html = '';
 
@@ -139,9 +143,7 @@ $("#cart").click(function () {
     html += '<option value="12">December</option>';
     html += '</select>';
     html += '<input type="text" id="creditcardyear" placeholder="XX" required /> (expiration month/year)';
-    html += '</td></tr>';
-    html += '</td></tr>';
-      
+    html += '</td></tr>';     
     html += '</table><br />';
     html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
     html += '</form>';
@@ -152,7 +154,7 @@ $("#cart").click(function () {
     $('#content').html(html);
 });
 
-
+// Submit Page.
 $(document).on('click', '#submit', function () {
     var html = '';
     html += '<div id="intro">';
