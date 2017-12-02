@@ -73,7 +73,8 @@ $("#media").click(function () {
         html += '<div id="intro">';
         html += '<h1>Media Highlights</h1>';
         html += '<br />';
-        html += '<p>-<i>See the results of our latest fishing exploits!</i></p>';
+        html += '<p>See the results of our latest fishing exploits!</p>';
+        html += '<br />';
         html += '<iframe width="560" height="315" src="https://www.youtube.com/embed/GMDqP_8Kl4U" frameborder="0" allowfullscreen></iframe>';
         html += '<br />';
         html += "</div>";
