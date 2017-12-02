@@ -21,6 +21,9 @@ function renderItem(item, category) {
         html += "<b>Size: </b>" + e.size + "<br /><br />";
         html += "<b>Weight: </b>" + e.weight + "<br /><br />";
         html += "<b>Cost:</b> $" + e.cost + "<br /><br />";
+        html += '<b>Customer Rating:</b>';
+        html += '<img src="./img/stars.png" alt="rating">';
+        html += '<br /><br />"';
         html += '<button class="add_cart" id="' + e._id + '|' + category +
             '"><span>Add to Cart </span></button><br /><br />';
         html += "</div>";
