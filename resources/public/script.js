@@ -48,6 +48,19 @@ $("#about").click(function () {
     $("#content").html(html);
 });
 
+// Testimonials Page.
+$("#test").click(function () {
+    var html = '';
+        html += '<div id="intro">';
+        html += '<h1>Testimonials</h1>';
+        html += '<br />';
+        html += '<p>dffdf</p>';
+        html += '<br />';
+        html += "</div>";
+    $("#content").html(html);
+});
+
+
 // Shopping cart.
 function cartHandler () {
     var id_full = this.id;
