@@ -372,7 +372,7 @@ span.tab {
         float: right;
         padding-right: 130px;
     }
-    #content {
+    #content, .item {
         margin: auto;
         width: 300;
         word-wrap: break-word;
