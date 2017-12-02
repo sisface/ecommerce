@@ -259,6 +259,9 @@ span.tab {
     padding: 0;
     margin-left: 5px
 }
+#category {
+    height: 43px; 
+}
 
 /* -- Advertisements -- */
 #random_ad {
