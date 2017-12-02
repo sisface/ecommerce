@@ -128,7 +128,7 @@ $("#cart").click(function () {
     html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
     html += '</form>';
     html += '<br /><br />';
-    html += '<button class="button" style="vertical-align:middle" id="submit"><span>Checkout <span></button>';
+    html += '<button class="button" style="vertical-align:middle" id="submit"><span>Checkout </span></button>';
     html += '&nbsp;&nbsp;&nbsp;';
     html += '</div>';
     $('#content').html(html);

@@ -90,14 +90,14 @@ table, td {
     margin: 5px;
 }
   
-.button span {
+.button, add_cart span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
   
-.button span:after {
+.button, add_cart span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -106,7 +106,7 @@ table, td {
     transition: 0.5s;
 }
   
-.button:hover span {
+.button, add_cart:hover span {
     padding-right: 25px;
 }
   
