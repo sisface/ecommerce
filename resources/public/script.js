@@ -21,7 +21,7 @@ function renderItem(item, category) {
         html += "<b>Weight: </b>" + e.weight + "<br /><br />";
         html += "<b>Cost:</b> $" + e.cost + "<br /><br />";
         html += '<button class="add_cart" id="' + e._id + '|' + category +
-            '"><span>Add to Cart <span></button><br /><br />';
+            '"><span>Add to Cart </span></button><br /><br />';
         html += "</div>";
     });
     return html;
@@ -130,6 +130,23 @@ $("#cart").click(function () {
     html += '<br /><br />';
     html += '<button class="button" style="vertical-align:middle" id="submit"><span>Checkout </span></button>';
     html += '&nbsp;&nbsp;&nbsp;';
+    html += '<div id="head1" style="width:15%;float:right;margin-left:5px;">';
+    html += '<select id="gMonth1">';
+    html += '<option value="">--Select Month--</option>';
+    html += '<option selected value="1">Janaury</option>';
+    html += '<option value="2">February</option>';
+    html += '<option value="3">March</option>';
+    html += '<option value="4">April</option>';
+    html += '<option value="5">May</option>';
+    html += '<option value="6">June</option>';
+    html += '<option value="7">July</option>';
+    html += '<option value="8">August</option>';
+    html += '<option value="9">September</option>';
+    html += '<option value="10">October</option>';
+    html += '<option value="11">November</option>';
+    html += '<option value="12">December</option>';
+    html += '</select></div>';
+
     html += '</div>';
     $('#content').html(html);
 });
