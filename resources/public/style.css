@@ -137,10 +137,6 @@ img.wrap {
     float: left;
     padding: 1em
 }
-#cart {
-    float: right;
-    display: block;
-}
 .bw {
     -webkit-transition: all 1s ease;
        -moz-transition: all 1s ease;
