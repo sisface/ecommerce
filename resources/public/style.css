@@ -232,6 +232,11 @@ span.tab {
     background-color: rgb(241, 165, 64);
     background-position: 0 -43px;
 }
+#navbar li:last-child {
+    border-right: none;
+    border-left: 1px solid;
+    float: right;
+}
 
 /* -- Search Bar -- */
 #main {
@@ -335,11 +340,6 @@ span.tab {
         width: 200px;
         color: black;
     }
-#nav li:last-child {
-    border-right: none;
-    border-left: 1px solid;
-    float: right;
-}
     #search {
         float: left;
         right: 12px;
