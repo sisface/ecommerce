@@ -259,10 +259,6 @@ span.tab {
     padding: 0;
     margin-left: 5px
 }
-#category {
-    height: 43px; 
-    margin-left: 50em
-}
 
 /* -- Advertisements -- */
 #random_ad {
@@ -302,11 +298,6 @@ span.tab {
     #intro {
         width: 250px;
         word-wrap: break-word;
-    }
-}
-@media all and (max-width: 1400px) {
-    #category {
-        margin-left: 0
     }
 }
 @media only screen and (max-width: 500px) {
