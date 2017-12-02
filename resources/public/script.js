@@ -67,6 +67,17 @@ $("#test").click(function () {
     $("#content").html(html);
 });
 
+// Media Page.
+$("#media").click(function () {
+    var html = '';
+        html += '<div id="intro">';
+        html += '<h1>Media Highlights</h1>';
+        html += '<br />';
+        html += '<iframe width="560" height="315" src="https://www.youtube.com/embed/GMDqP_8Kl4U" frameborder="0" allowfullscreen></iframe>';
+        html += '<br />';
+        html += "</div>";
+    $("#content").html(html);
+});
 
 // Shopping cart.
 function cartHandler () {
