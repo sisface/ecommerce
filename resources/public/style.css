@@ -373,7 +373,7 @@ span.tab {
         padding-right: 130px;
     }
     #content {
-        margin: 0.5em 0.5em 0.5em 1em;
+        margin: auto;
         width: 300;
         word-wrap: break-word;
     }
