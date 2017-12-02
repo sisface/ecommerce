@@ -138,7 +138,7 @@ $("#cart").click(function () {
     html += '<option value="11">November</option>';
     html += '<option value="12">December</option>';
     html += '</select>';
-    html += '<br /><input type="text" id="creditcardyear" placeholder="XX" required /> (expiration month/year)';
+    html += '<input type="text" id="creditcardyear" placeholder="XX" required /> (expiration month/year)';
     html += '</td></tr>';
     html += '</td></tr>';
       
