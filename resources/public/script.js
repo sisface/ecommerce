@@ -23,7 +23,6 @@ function renderItem(item, category) {
         html += "<b>Cost:</b> $" + e.cost + "<br /><br />";
         html += '<b>Customer Rating:</b><br />';
         html += '<img src="./img/stars.png" alt="rating">';
-        html += '<br /><br />';
         html += '<button class="add_cart" id="' + e._id + '|' + category +
             '"><span>Add to Cart </span></button><br /><br />';
         html += "</div>";
