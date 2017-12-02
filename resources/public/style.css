@@ -372,4 +372,11 @@ span.tab {
         float: right;
         padding-right: 130px;
     }
+    #search {
+        float: right;
+        right: 12px;
+        top: 10px;
+        width: 300px;
+        text-align: right
+    }
 }
