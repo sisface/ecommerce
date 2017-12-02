@@ -122,15 +122,7 @@ $("#cart").click(function () {
     html += '<tr><td>Email Address:</td><td><input type="email" id="emailaddress" placeholder="name@domain.com" required /> (email address)</td></tr>';
     html += '<tr><td>Credit Card Number:</td><td><input type="text" id="creditcardnum" placeholder="XXXXXXXXXXXXXXXX" required /> (credit card number)</td></tr>';
     html += '<tr><td>Credit Card CSV:</td><td><input type="text" id="creditcardcsv" placeholder="XXX" required /> (security code)</td></tr>';
-    html += '<tr><td>Credit Card Expiration Date:</td><td><input type="text" id="creditcarddate" placeholder="XX/XX" required /> (month/year)</td></tr>';
-    html += '</td></tr>';
-    html += '</table><br />';
-    html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
-    html += '</form>';
-    html += '<br /><br />';
-    html += '<button class="button" style="vertical-align:middle" id="submit"><span>Checkout </span></button>';
-    html += '&nbsp;&nbsp;&nbsp;';
-    html += '<div id="head1" style="width:15%;float:right;margin-left:5px;">';
+    html += '<tr><td>Credit Card Expiration Date:</td><td>';
     html += '<select id="gMonth1">';
     html += '<option value="">--Select Month--</option>';
     html += '<option selected value="1">Janaury</option>';
@@ -145,8 +137,16 @@ $("#cart").click(function () {
     html += '<option value="10">October</option>';
     html += '<option value="11">November</option>';
     html += '<option value="12">December</option>';
-    html += '</select></div>';
-
+    html += '</select>';
+    html += '</td></tr>';
+    html += '</td></tr>';
+      
+    html += '</table><br />';
+    html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
+    html += '</form>';
+    html += '<br /><br />';
+    html += '<button class="button" style="vertical-align:middle" id="submit"><span>Checkout </span></button>';
+    html += '&nbsp;&nbsp;&nbsp;';
     html += '</div>';
     $('#content').html(html);
 });
