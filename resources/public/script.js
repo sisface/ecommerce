@@ -21,7 +21,7 @@ function renderItem(item, category) {
         html += "<b>Weight: </b>" + e.weight + "<br /><br />";
         html += "<b>Cost:</b> $" + e.cost + "<br /><br />";
         html += '<button class="add_cart" id="' + e._id + '|' + category +
-            '">Add to Cart</button><br /><br />';
+            '"><span>Add to Cart <span></button><br /><br />';
         html += "</div>";
     });
     return html;
@@ -105,7 +105,7 @@ $("#cart").click(function () {
     html += '<input type="text" name="accountname"><br />';
     html += 'Password:<br />';
     html += '<input type="password" name="password"><br />';
-    html += '<button class="button" style="vertical-align:middle">Login</button>';
+    html += '<button class="button" style="vertical-align:middle"><span>Login </span></button>';
     html += '</form>';
     html += '<br /><br />';
     html += '<p><b><Check out as guest</b></p>';
@@ -128,7 +128,7 @@ $("#cart").click(function () {
     html += '<p><b>Comments:</b><br /><br /><textarea name="comments" rows="4" cols="36">Enter additional comments here.</textarea></p>';
     html += '</form>';
     html += '<br /><br />';
-    html += '<button class="button" style="vertical-align:middle" id="submit">Checkout</button>';
+    html += '<button class="button" style="vertical-align:middle" id="submit"><span>Checkout <span></button>';
     html += '&nbsp;&nbsp;&nbsp;';
     html += '</div>';
     $('#content').html(html);
