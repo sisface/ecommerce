@@ -335,6 +335,11 @@ span.tab {
         width: 200px;
         color: black;
     }
+#nav li:last-child {
+    border-right: none;
+    border-left: 1px solid;
+    float: right;
+}
     #search {
         float: left;
         right: 12px;
