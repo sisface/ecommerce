@@ -195,7 +195,7 @@ $(document).on('click', '#submit', function () {
     html += '<div id="intro">';
     html += '<h1>Thank you for your patronage.</h1>',
     html += '<br />';
-    html += '<p>Your credit card information is being processed.  Please allow 6 to 8 weeks for delivery</p>';
+    html += '<p>Your credit card information is being processed.  Please allow 6 to 8 weeks for delivery.</p>';
     html += '<br />';
     html += "</div>";
     $("#content").html(html);
